@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+<style> 
+    form { 
+         margin: 0 auto; 
+        width:250px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    h1{
+        text-align: center;
+    }
+    </style>
+
+<h1>{% block title%}Edit student {%endblock%}</h1>
+{%block body%}
+
+<form method = "POST">
+    {% csrf_token %}
+    <table>
+        {{editform}}
+    </table>
+    <input type="submit" > 
+</form>
+
+{%endblock%}
+{%endblock%}

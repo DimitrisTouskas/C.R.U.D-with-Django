@@ -1,0 +1,30 @@
+{
+	"folders": {},
+	"connections": {
+		"sqlite_jdbc-1803c6f879e-25d4a8bb6d768cea": {
+			"provider": "sqlite",
+			"driver": "sqlite_jdbc",
+			"name": "db.sqlite3 5",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"database": "/Users/mac/Desktop/Django Test/leads/migrations/db.sqlite3",
+				"url": "jdbc:sqlite:/Users/mac/Desktop/Django Test/leads/migrations/db.sqlite3",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}

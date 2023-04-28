@@ -1,0 +1,32 @@
+
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+<style>
+    form { 
+        margin: 0 auto; 
+        width:250px;
+        text-align: center;
+    }
+    button{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+</style>
+
+<h4>{%block title%}
+Login here
+{%endblock%}</h4>
+
+{%block conten%}
+    <form method = "post" class=" form-group">
+        {% csrf_token%}
+        {{form}}
+        <div class="col-12" >
+            <button type="submit" class="btn btn-primary" value="Submit">Login</button>
+            </div>
+    </form>
+{%endblock%}
+{%endblock%}

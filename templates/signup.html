@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+<style> 
+    form { 
+         margin: 0 auto; 
+         width:250px;
+         text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+</style>
+<h3>{% block title%}Create a new User {%endblock%}</h3>
+
+<form method = "POST">
+    {% csrf_token %}
+    <table>
+        {{form}}
+    </table>
+    <input type= "submit">
+</form>
+{% endblock %}
+

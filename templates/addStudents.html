@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block content%}
+<h1>{% block title%}Create a new student {%endblock%}</h1>
+<style> 
+form { 
+     margin: 0 auto; 
+    width:250px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+</style>
+{%block body%}
+
+<form method = "POST">
+    {% csrf_token %}
+    <table>
+        {{form}}
+    </table>
+    <input type="submit" > 
+</form>
+
+{%endblock%}
+{%endblock%}
